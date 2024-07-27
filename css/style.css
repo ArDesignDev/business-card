@@ -1924,6 +1924,12 @@ iframe.wait-autoplay {
   }
 }
 
+@media (max-width: 50em) {
+  .contact-form {
+    margin-top: 4rem;
+  }
+}
+
 .footer {
   background-color: #262626;
   padding: 1.5rem 1rem 2rem;

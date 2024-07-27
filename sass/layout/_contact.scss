@@ -114,3 +114,9 @@
         }
     }
 }
+
+.contact-form {
+    @media (max-width: $bp-medium) {
+        margin-top: 4rem;
+    }
+}

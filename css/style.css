@@ -1492,6 +1492,9 @@ iframe.wait-autoplay {
 }
 
 
+.slick-slider .slick-slide {
+  margin: 0.5rem;
+}
 .slick-slider .slick-track {
   padding-bottom: 5rem;
   display: -webkit-box;

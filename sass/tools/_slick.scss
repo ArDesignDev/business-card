@@ -1,0 +1,133 @@
+.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:0}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}.slick-track:after,.slick-track:before{display:table;content:''}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir=rtl] .slick-slide{float:right}.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}
+/*# sourceMappingURL=slick.min.css.map */
+
+// Slick settings
+.slick-slider {
+
+    .slick-track {
+        padding-bottom: 7rem;
+    }
+
+    // slick dots
+    .slick-dots {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+
+        @media (max-width: $bp-medium) {
+            right: auto;
+            left: 0;
+            transform: none;
+            width: 100%;
+            text-align: center;
+        }
+        
+        li {
+            display: inline-block;
+            margin-right: 1rem;
+            margin-left: 0;
+            opacity: .6;
+            border: none;
+            
+            button {
+                color: transparent;
+                background-color: transparent;
+                border: none !important;
+                width: 1.4rem;
+                height: 1.4rem;
+                border-radius: 50%;
+                cursor: pointer;
+                border: none;
+                background-color: #fff;
+            }
+
+            &.slick-active {
+                opacity: 1;
+            }
+        }
+    }
+
+    // slick arrows
+    .slick-prev,
+    .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: calc(50% - 2rem);
+        bottom: auto;
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        padding: 0;
+        transform: translate(0, -50%);
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        outline: none;
+        z-index: 9;
+        transition: opacity .4s;
+        opacity: 1;
+        background-color: transparent;
+        border-radius: .5rem;
+        background-color: #fff;
+        box-shadow: -1px 4px 20px 2px rgba(143, 143, 143, 0.17);
+
+        @media (max-width: $bp-medium) {
+            width: 3rem;
+            height: 3rem;;
+            bottom: 2rem;
+        }
+
+        
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: 2rem;
+            height: 2rem;
+            background-image: url(../images/arrow.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            transition: $transition;
+
+            @media (max-width: $bp-medium) {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+
+        @media (max-width: 1600px) {
+            right: 18.5vw;
+        }
+
+        @media (max-width: $bp-medium) {
+            left: 2rem;
+        }
+
+        &::before {
+            transform: translate(-50%, -50%) scale(-1);
+        }
+    }
+
+    .slick-next {
+        right: 0;
+
+        @media (max-width: $bp-medium) {
+            right: 2rem;
+        }
+    }
+}

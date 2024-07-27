@@ -1,20 +1,20 @@
 .contact {
     background-color: $background-color;
-    padding: 8rem 0;
+    padding: 10rem 0 8rem;
 
-    h2, p {
+    h2, h3, p, li {
         color: #fff;
     }
 
-    h2 {
-        text-align: center;
-        margin-bottom: 4rem;
+    h3 {
+        margin-top: 0;
     }
 
-    .contact-map {
-        iframe {
-            width: 100%;
-            height: 60rem;
+    .contact-text {
+        padding-right: 4rem;
+
+        @media (max-width: $bp-medium) {
+            padding-right: 0;
         }
     }
 
@@ -66,6 +66,28 @@
         margin-top: 1em;
     }
 
+    .contact-info {
+        margin-top: 3rem;
+
+        p, a {
+            color: #fff;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 1.5rem;
+                width: 2.2rem;
+
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
     .social-media a {
         margin: 0 0.5em;
         text-decoration: none;
@@ -74,5 +96,13 @@
 
     .social-media a:hover {
         text-decoration: underline;
+    }
+}
+
+.contact-map {
+
+    iframe {
+        width: 100%;
+        height: 60rem;
     }
 }

@@ -6,8 +6,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9;
-    background-color: #fff;
+    z-index: 9999;
+    background-color: $background-gray;
+    border-bottom: 1px solid #fff;
 
     .header-logo {
         img {

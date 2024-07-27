@@ -1,0 +1,19 @@
+.opening {
+    background-color: #092640;
+    padding: 3rem;
+
+    h3, li {
+        color: #fff;
+    }
+
+    .opening-hours {
+        list-style: none;
+    }
+
+    .opening-small {
+        color: #d1cccc;
+        font-size: 1rem;
+        display: inline-block;
+        margin-top: 2rem;
+    }
+}

@@ -5,7 +5,8 @@
 .slick-slider {
 
     .slick-track {
-        padding-bottom: 7rem;
+        padding-bottom: 5rem;
+        display: flex;
     }
 
     // slick dots
@@ -130,4 +131,8 @@
             right: 2rem;
         }
     }
+}
+
+.slick-slider .slick-dots li button {
+    background-color: $color-primary;
 }

@@ -2,6 +2,11 @@
     margin-bottom: 5rem;
     padding: 8rem 0 5rem;
 
+    @media (max-width: $bp-medium) {
+        margin-bottom: 0;
+        padding: 2rem 0 5rem;
+    }
+
     .hero-text {
         padding-right: 4rem;
 
@@ -16,6 +21,11 @@
             width: 100%;
             object-fit: cover;
             border-radius: .5rem;
+
+            @media (max-width: $bp-medium) {
+                height: 27rem;
+                margin-bottom: 2rem;
+            }
         }
 
     }

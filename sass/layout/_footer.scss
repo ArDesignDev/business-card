@@ -1,6 +1,16 @@
 .footer {
     background-color: $background-color-dark;
-    padding: 1.5rem 1rem 1rem;
+    padding: 1.5rem 1rem 2rem;
+
+    @media (max-width: $bp-medium) {
+        padding: 2rem 0 3rem;
+        text-align: center;
+
+        .a-right {
+            text-align: center;
+            padding-top: .5rem;
+        }
+    }
 
     p {
         margin-bottom: 0;
@@ -10,7 +20,7 @@
     }
 
     a {
-        color: $color-primary;
+        color: #fff;
         text-decoration: underline;
     }
 }

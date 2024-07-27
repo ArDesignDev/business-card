@@ -1,0 +1,21 @@
+.hero {
+    margin-bottom: 5rem;
+    padding: 6rem 0 5rem;
+
+    .hero-text {
+        padding-right: 4rem;
+
+        @media (max-width: $bp-medium) {
+            padding-right: 0;
+        }
+    }
+
+    .hero-img {
+        img {
+            height: 50rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+}

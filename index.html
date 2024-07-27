@@ -21,14 +21,21 @@
         <header class="header">
             <div class="container">
                 <div class="row justify-center">
-                    <div class="col-sm-6">
+                    <div class="col-6">
                         <div class="header-logo">
                             <img src="images/logo.svg" alt="company logo" title="company logo">
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-6">
                         <ul class="header-contact">
-                            <li>Call: <a href="tel:+38640765345"></a> +38640765345</li>
+                            <li class="desktop-only">
+                                <a href="tel:+38640765345" class="header-contact-num">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z" />
+                                    </svg> +38640765345
+                                </a>
+                            </li>
                             <li><a href="#contact" class="btn">Contact us</a></li>
                         </ul>
                     </div>
@@ -70,6 +77,21 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, non distinctio error ut
                     necessitatibus, hic aut earum minima voluptatibus fugiat perspiciatis reiciendis atque, accusantium
                     praesentium esse cum qui repellendus nisi.</p>
+
+                <div class="about-gallery">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/hero-img.jpg" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/hero-img.jpg" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/hero-img.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -106,6 +128,44 @@
                 </div>
 
 
+
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Get in touch</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+
+                        <div class="contact-form">
+                            <form>
+                                <input type="text" id="name" name="name" required placeholder="Name">
+                                <input type="email" id="email" name="email" required placeholder="Email">
+                                <input type="text" id="conpany" name="company" required placeholder="Company">
+                                <textarea id="message" name="message" required placeholder="Message:"></textarea>
+                                <button type="submit">Submit</button>
+                            </form>
+                            <div class="contact-info">
+                                <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                                <p>Phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+                            </div>
+                            <div class="social-media">
+                                <a href="#">Facebook</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contact-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9234.814899962968!2d8.516805721414823!3d47.360923014808044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479009f96ac0ffb3%3A0x153dd44f32fec7ed!2sFIFA%20Museum!5e0!3m2!1sen!2sch!4v1722098210517!5m2!1sen!2sch"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </section>

@@ -1,6 +1,6 @@
 .hero {
     margin-bottom: 5rem;
-    padding: 6rem 0 5rem;
+    padding: 8rem 0 5rem;
 
     .hero-text {
         padding-right: 4rem;
@@ -15,6 +15,7 @@
             height: 50rem;
             width: 100%;
             object-fit: cover;
+            border-radius: .5rem;
         }
 
     }

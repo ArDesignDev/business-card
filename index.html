@@ -23,7 +23,7 @@
                 <div class="row justify-center">
                     <div class="col-6">
                         <div class="header-logo">
-                            <img src="images/logo.svg" alt="company logo" title="company logo">
+                            <img src="images/my-company-logo.png" alt="company logo" title="company logo">
                         </div>
                     </div>
                     <div class="col-6">
@@ -206,7 +206,8 @@
 
                         <div class="contact-form">
                             <h3>Send us a message:</h3>
-                            <form>
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="1dc2c3f5-5519-4257-9899-1fba6c9eb052">
                                 <input type="text" id="name" name="name" required placeholder="Name">
                                 <input type="email" id="email" name="email" required placeholder="Email">
                                 <input type="text" id="conpany" name="company" required placeholder="Company">

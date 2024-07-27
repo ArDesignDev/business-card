@@ -5517,7 +5517,7 @@ html {
   border-bottom: 1px solid #fff;
 }
 .header .header-logo img {
-  height: 3rem;
+  max-height: 5rem;
   width: auto;
   max-width: 100%;
 }
@@ -5634,7 +5634,7 @@ html {
 }
 
 .contact {
-  background-color: #132e47;
+  background-color: #2f2f2f;
   padding: 10rem 0 8rem;
 }
 .contact h2, .contact h3, .contact p, .contact li {

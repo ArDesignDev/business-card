@@ -1,0 +1,56 @@
+
+$font-primary: 'Raleway', sans-serif;
+
+// Colors
+$color-primary: red;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 87.5em;  // 1400px
+$bp-large: 65em;  // 1040px
+$bp-medium: 50em;   // 800px
+$bp-small: 37.5em;  // 600px
+
+$bp-medium-min: 48,875em; // 782px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: $color-primary;
+  }
+  
+::selection {
+    color: #fff;
+    background: $color-primary;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px 
+
+    @media (max-width: $bp-largest) {
+       font-size: 55%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

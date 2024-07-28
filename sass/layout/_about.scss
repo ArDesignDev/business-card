@@ -31,6 +31,9 @@
             cursor: pointer;
             transition: $transition;
             border-radius: .5rem;
+            height: 27rem;
+            width: 100%;
+            object-fit: cover;
 
             &:hover {
                 opacity: .6;

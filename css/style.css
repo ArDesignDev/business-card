@@ -1630,7 +1630,7 @@ iframe.wait-autoplay {
 }
 
 .slick-slider .slick-dots li button {
-  background-color: #1f6de2;
+  background-color: #939393;
 }
 
 .header {
@@ -1684,8 +1684,7 @@ iframe.wait-autoplay {
 }
 
 .hero {
-  margin-bottom: 5rem;
-  padding: 8rem 0 5rem;
+  padding: 6rem 0 6rem;
 }
 @media (max-width: 50em) {
   .hero {
@@ -1746,6 +1745,10 @@ iframe.wait-autoplay {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border-radius: 0.5rem;
+  height: 27rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about .about-gallery img:hover {
   opacity: 0.6;
